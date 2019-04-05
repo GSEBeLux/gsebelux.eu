@@ -43,7 +43,7 @@ section = [ "HTML", "Calendar" ]
 [[menu.navbar]]
 	parent = "workgroups"
 	name = "Architecture & Innovation"
-	url = "/workgroups/architecture_and_innovation/"
+	url = "/workgroups/architectureinnovation/"
 	weight = -2000
 [[menu.navbar]]
 	parent = "workgroups"
@@ -58,7 +58,7 @@ section = [ "HTML", "Calendar" ]
 [[menu.navbar]]
 	parent = "workgroups"
 	name = "IMS and DB2 Systems"
-	url = "/workgroups/ims_and_db2"
+	url = "/workgroups/imsdb2"
 	weight = -1700
 [[menu.navbar]]
 	parent = "workgroups"
