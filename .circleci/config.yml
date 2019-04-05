@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  production:
+    docker:
+      - image: cibuilds/hugo:0.54
+    steps:
+      - checkout
+      - run:
+          name: "Build site to GH Pages"
+          command: bin/deploy.sh
+
+  build:
+    docker:
+      - image: cibuilds/hugo:0.54
+    working_directory: ~/devopsdays
+    steps:
+      - checkout
+      - run:
+          name: "Run Hugo"
+          command: make
+      - persist_to_workspace:
+          paths: 
+            - public
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
