@@ -12,14 +12,15 @@ jobs:
   build:
     docker:
       - image: cibuilds/hugo:0.54
-    working_directory: ~/devopsdays
+    working_directory: ~/gsebelux
     steps:
       - checkout
       - run:
           name: "Run Hugo"
           command: make
       - persist_to_workspace:
-          paths: 
+          root: .
+          paths:
             - public
 
 workflows:
