@@ -1,0 +1,97 @@
+### config.toml
+title = "GSEBeLux"
+baseURL = "https://gsebelux.be/"
+theme = "gsebelux"
+languageCode = "en-us"
+dataDir = "data"
+assetDir = "assets"
+PaginatePath = "blog"
+sectionPagesMenu = "main"
+buildDrafts = false
+pygmentsUseClasses = true
+enableGitInfo = true
+enableRobotsTXT = true
+
+[outputs]
+section = [ "HTML", "Calendar" ]
+
+### toparea
+[params.toparea]
+	text = "Regional Conference - 8th May 2019 - Business Agility"
+
+### navbar
+[[menu.navbar]]
+	name = "About"
+	identifier = "about"
+	url = "/about/"
+	weight = -2000
+[[menu.navbar]]
+	name = "Events"
+	identifier = "events"
+	url = "/events/"
+	weight = -1900
+[[menu.navbar]]
+	name = "Chat"
+	identifier = "chat"
+	url = "https://mattermost.gsebelux.eu/"
+	weight = -1800
+[[menu.navbar]]
+	name = "Workgroups"
+	identifier = "workgroups"
+	url = "/workgroups/"
+	weight = -1700
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "Architecture & Innovation"
+	url = "/workgroups/architecture_and_innovation/"
+	weight = -2000
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "DevOps & Automation"
+	url = "/workgroups/devopsautomation/"
+	weight = -1900
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "Enterprise System Security"
+	url = "/workgroups/enterprisesystemsecurity/"
+	weight = -1800
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "IMS and DB2 Systems"
+	url = "/workgroups/ims_and_db2"
+	weight = -1700
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "Large Users Management"
+	url = "/workgroups/largeusermanagement"
+	weight = -1600
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "Middleware and Transaction Systems"
+	url = "/workgroups/middlewaretransactionsystems/"
+	weight = -1500
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "Storage Management"
+	url = "/workgroups/storagemanagement/"
+	weight = -1400
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "Young Professionals"
+	url = "/workgroups/youngprofessionals/"
+	weight = -1300
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "Operating Systems"
+	url = "/workgroups/operatingsystems"
+	weight = -1200
+[[menu.navbar]]
+	parent = "workgroups"
+	name = "Regional Board Commitee"
+	url = "/workgroups/regionalboardcommitee"
+	weight = -100
+
+#[params.analytics.piwik]
+#	URL = "https://stats.vantosh.com"
+#	ID = ""
+

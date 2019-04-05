@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta content="GSEBelux,GSE,BeLux,Belgium,Luxembourg" name="keywords">
+	<meta content="" name="description">
+	<meta property='og:title' content='GSE BeLux'>
+	<meta property='og:description' content=''>
+	<meta property='og:url' content='https://gsebelux.be'>
+	<meta property='og:site_name' content='GSEBeLux'>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@gsebelux" />
+	<meta name="twitter:creator" content="@gsebelux" />
+	<meta name="twitter:title" content="{{- .Title | plainify | htmlUnescape -}}" />
+	<meta name="twitter:description" content="{{- .Content | plainify | htmlUnescape -}}" />
+	{{ if (isset .Params "image") }}
+	<meta name="twitter:image" content="{{- .Params.image -}}" />
+	<meta name="twitter:image:alt" content="GSEBeLux" />
+	{{ else if (isset .Params "speaker") }}
+	{{- $speaker := .Param "speaker" -}}
+	{{- $speakerfile := printf "%s/%s" "speaker" $speaker -}}
+	{{- with .Site.GetPage $speakerfile -}}
+	{{ if isset .Params "image" }}
+	{{ $image := .Param "image" }}
+	{{ $imageurl := urls.Parse $image }}
+	{{ if eq $imageurl.Scheme "https" }}
+	<meta name="twitter:image" content="{{ $imageurl }}" />
+	{{ else }}
+	{{ $imagelocation := (printf "%s/%s" "images/speakers/" $image) }}
+	{{ $imageresource := resources.Get $imagelocation }}
+	{{ $imagefile := $imageresource.Fit "400x400" }}
+	<meta name="twitter:image" content="{{ $imagefile.Permalink }}" />
+	{{ end }}
+	{{- end -}}
+	<meta name="twitter:image:alt" content="{{ .Title }}" />
+	{{- end -}}
+	{{- end -}}
+	<meta name="twitter:image" content="https://gsebelux.be/images/gsebelux.png" />
+	<meta name="twitter:image:alt" content="GSEBeLux" />
+	<title>{{ .Title }}</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+	<link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+	<link href="css/animate.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet">
+	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<link id="t-colors" href="color/default.css" rel="stylesheet">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+<div id="preloader">
+	<div class="preloader">
+		<div class="sk-wave">
+			<div class="sk-rect sk-rect1"></div>
+			<div class="sk-rect sk-rect2"></div>
+			<div class="sk-rect sk-rect3"></div>
+			<div class="sk-rect sk-rect4"></div>
+			<div class="sk-rect sk-rect5"></div>
+		</div>
+	</div>
+</div>

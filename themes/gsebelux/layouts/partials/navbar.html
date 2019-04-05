@@ -1,0 +1,43 @@
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+{{ if .Site.Params.toparea }}
+<div class="top-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<p class="bold text-center">{{ .Site.Params.toparea.text }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+{{ end }}
+<div class="container navigation">
+	<div class="navbar-header page-scroll">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+			<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand" href="/">
+			{{ $imageresource := resources.Get "img/gsebelux.png" }}
+			{{ $imagefile := $imageresource.Resize "100x50" }}
+			<img src="{{ $imagefile.RelPermalink }}" alt="GSEBeLux" title="GSEBeLux"/>
+		</a>
+	</div>
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+		{{ range .Site.Menus.navbar }}
+			{{ if .HasChildren }}
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ .Name }}<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						{{ range .Children }}
+							<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+						{{ end }}
+					</ul>
+				</li>
+			{{ else }}
+				<li class="active"><a href="{{ .URL }}">{{ .Name }}</a></li>
+			{{ end }}
+		{{ end }}
+		</ul>
+	</div>
+</div>
+</nav>

@@ -1,0 +1,56 @@
+<footer>
+	<div class="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<div class="wow fadeInLeft" data-wow-delay="0.1s">
+						<div class="text-left">
+							<p>&copy; Copyright - GSE BeLux vzw.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<div class="wow fadeInTop" data-wow-delay="0.1s">
+						<div class="text-center">
+							<p>{{ if .GitInfo }}Git {{ .GitInfo.AbbreviatedHash }}{{ end }}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<div class="wow fadeInRight" data-wow-delay="0.1s">
+						<div class="text-right">
+								 Website built with HugoIO, Github
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+<script src="{{ "js/preload.js" | absURL }}"></script>
+
+{{ if .Site.Params.analytics.piwik }}
+	{{ partial "_analytics/piwik.html" . }}
+{{ end }}
+
+<script src="{{ "/js/jquery.min.js" | relURL }}"></script>
+<script src="{{ "/js/wow.min.js" | relURL }}"></script>
+{{ $customjavascript := resources.Get "js/custom.js" }}
+{{ $customjs := $customjavascript | resources.Minify }}
+<script src="{{ $customjs.RelPermalink }}"></script>
+{{ $appearjavascript := resources.Get "js/jquery.appear.js" }}
+{{ $appearjs := $appearjavascript | resources.Minify }}
+<script src="{{ $appearjs.RelPermalink }}"></script>
+{{ $stellarjavascript := resources.Get "js/stellar.js" }}
+{{ $stellarjs := $stellarjavascript | resources.Minify }}
+<script src="{{ $stellarjs.RelPermalink }}"></script>
+<script src="{{ "/js/bootstrap.min.js" | relURL }}"></script>
+<script src="{{ "/js/jquery.easing.min.js" | relURL }}"></script>
+<script src="{{ "/js/jquery.scrollto.min.js" | relURL }}"></script>
+
+</body>
+</html>

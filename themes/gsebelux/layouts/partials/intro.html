@@ -1,0 +1,14 @@
+<section id="intro" class="intro paddingtop-120">
+	<div class="container">
+		<div class="row">
+			{{ range first 4 (where .Data.Pages "Type" "posts") }}
+				<div class="col-lg-8">
+					<h1>{{ .Title }}</h1>
+					<h3>{{ .Date.Format "2 January 2006" }}</h3>
+					<p>{{ .Content }}<p>
+				</div>
+			{{ end  }}
+		</div>
+	</div>
+</section>
+

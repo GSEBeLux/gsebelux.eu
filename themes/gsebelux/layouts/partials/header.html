@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta content="GSEBelux,GSE,BeLux,Belgium,Luxembourg" name="keywords">
+	<meta content="" name="description">
+	<meta property='og:title' content='GSE BeLux'>
+	<meta property='og:description' content=''>
+	<meta property='og:url' content='https://gsebelux.be'>
+	<meta property='og:site_name' content='GSEBeLux'>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@gsebelux" />
+	<meta name="twitter:creator" content="@gsebelux" />
+	<meta name="twitter:title" content="{{- .Title | plainify | htmlUnescape -}}" />
+	<meta name="twitter:description" content="{{- .Content | plainify | htmlUnescape -}}" />
+	<meta name="twitter:image" content="https://gsebelux.eu/img/gsebelux.png" />
+	<meta name="twitter:image:alt" content="GSEBeLux" />
+	<title>{{ .Title }}</title>
+	{{ $stylesheetcss := resources.Get "css/style.css" }}
+	{{ $stylecss := $stylesheetcss | resources.Minify }}
+	<link href="{{ $stylecss.RelPermalink }}" rel="stylesheet" type="text/css" media="screen">
+	{{ $colorsheetcss := resources.Get "css/color.css" }}
+	{{ $colorcss := $colorsheetcss | resources.Minify }}
+	<link href="{{ $colorcss.RelPermalink }}" rel="stylesheet" type="text/css" media="screen">
+	<link href="{{ "/css/font-awesome.min.css" | relURL }}" rel="stylesheet" type="text/css" />
+	<link href="{{ "/css/bootstrap.min.css" | relURL }}" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="https://registration.gsebelux.eu/regionalconference/2019/widget/v1.css">
+    <script type="text/javascript" src="https://registration.gsebelux.eu/widget/v1.en.js" async></script>
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+<div id="preloader">
+	<div class="preloader">
+		<div class="sk-wave">
+			<div class="sk-rect sk-rect1"></div>
+			<div class="sk-rect sk-rect2"></div>
+			<div class="sk-rect sk-rect3"></div>
+			<div class="sk-rect sk-rect4"></div>
+			<div class="sk-rect sk-rect5"></div>
+		</div>
+	</div>
+</div>
