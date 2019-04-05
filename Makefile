@@ -2,7 +2,7 @@
 
 HUGO=hugo
 
-.PHONY: build serve draft clean
+.PHONY: build serve draft clean travis netlify
 
 all: build
 
@@ -11,6 +11,9 @@ build:
 
 travis:
 	$(MAKE) HUGO=./hugo build
+
+netlify:
+	$(HUGO) --minify --baseURL="$DEPLOY_PRIME_URL"
 
 draft:
 	$(HUGO) --minify --buildDrafts --buildFuture --buildExpired
