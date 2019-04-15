@@ -1,6 +1,6 @@
 ### config.toml
 title = "GSEBeLux"
-baseURL = "https://gsebelux.be/"
+baseURL = "https://gsebelux.eu/"
 theme = "gsebelux"
 languageCode = "en-us"
 dataDir = "data"
