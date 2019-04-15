@@ -91,7 +91,7 @@ section = [ "HTML", "Calendar" ]
 	url = "/workgroups/regionalboardcommitee"
 	weight = -100
 
-#[params.analytics.piwik]
-#	URL = "https://stats.vantosh.com"
-#	ID = ""
+[params.analytics.piwik]
+	URL = "https://stats.vantosh.com"
+	ID = "58"
 
