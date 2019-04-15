@@ -16,4 +16,3 @@ and will be a full day event, starting at 9:30, and ending at 17:00 followed by 
 The location Elewijt Center has free parking places.
 
 Please register via [Eventbrite](https://www.eventbrite.be/e/gse-regional-conference-belux-8052019-tickets-56029586000).
-<pretix-widget event="https://registration.gsebelux.eu/regionalconference/2019/"></pretix-widget>
