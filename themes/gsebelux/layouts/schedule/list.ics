@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//cfgmgmtcamp/schedule//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+{{ if isset .Params "schedulename" -}}
+X-WR-CALDESC;VALUE=TEXT:{{ .Param "schedulename" }}
+X-WR-CALNAME;VALUE=TEXT:{{ .Param "schedulename" }}
+{{ else -}}
+X-WR-CALDESC;VALUE=TEXT:iCal
+X-WR-CALNAME;VALUE=TEXT:iCal
+{{ end -}}
+X-WR-TIMEZONE;VALUE=TEXT:Europe/Brussels
+{{ range .Pages -}}
+BEGIN:VEVENT
+METHOD:PUBLISH
+UID:{{ .File.BaseFileName }}@cfgmgmtcamp.eu
+{{ $title := .Title -}}
+{{ $title := replace $title "," "\\," -}}
+SUMMARY:{{ $title }}
+{{ $speaker := .Param "speaker" -}}
+{{ $speakerfile := printf "%s/%s" "speaker" $speaker -}}
+ORGANIZER:{{ with .Site.GetPage $speakerfile }}{{ .Title }}{{ end }}
+CATEGORIES:{{ .Params.Eventtype }}
+DTSTAMP:{{ dateFormat "20060102T150400" .Date }}Z
+TZID:Europe-Brussels
+{{ $day := .File.Dir -}}
+{{ $day := substr $day 9 -}}
+{{ $day := strings.TrimSuffix "/" $day -}}
+{{ $starttime := .Param "start" -}}
+{{ $endtime := .Param "end" -}}
+{{ range $.Site.Data.days -}}
+{{ if eq $day .day -}}
+{{ $date := string .date -}}
+{{ $starttime := replace $starttime ":" "" -}}
+{{ if le (len $starttime) 3 -}}
+DTSTART:{{ $date }}T0{{ $starttime }}00
+{{ else -}}
+DTSTART:{{ $date }}T{{ $starttime }}00
+{{ end -}}
+{{ $endtime := replace $endtime ":" "" -}}
+{{ if le (len $endtime) 3 -}}
+DTEND:{{ $date }}T0{{ $endtime }}00
+{{ else -}}
+DTEND:{{ $date }}T{{ $endtime }}00
+{{ end -}}
+{{ end -}}
+{{ end -}}
+DESCRIPTION:"{{ (htmlUnescape (replace .RawContent "\n" "")) | plainify | chomp }}"
+X-ALT-DESC;FMTTYPE=text/html:@"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 3.2//EN""><HTML><BODY>{{ (replace .Content "\n" "") | chomp }}</BODY></HTML>";
+URL:{{ .Permalink }}
+{{ $room := .Param "room" -}}
+{{ $roomfile := printf "%s/%s" "room" $room -}}
+LOCATION:{{ with .Site.GetPage $roomfile }}{{ .Param "code" }}{{ end }}
+CLASS:PUBLIC
+STATUS:CONFIRMED
+END:VEVENT
+{{ end -}}
+END:VCALENDAR

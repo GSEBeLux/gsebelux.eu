@@ -1,0 +1,59 @@
+{{ partial "header.html" . }}
+
+{{ partial "navbar.html" . }}
+
+{{ $speaker := .Param "speaker" }}
+{{ $speakerfile := printf "%s/%s" "speaker" $speaker }}
+{{ $room := .Param "Room" }}
+{{ $roomfile := printf "%s/%s" "room" $room }}
+
+<section id="talk">
+	<div id="talk">
+		<h1>{{ .Title }}</h1>
+		<h2>{{ with .Site.GetPage $speakerfile }}<a href="{{ $speakerfile | relURL }}">{{ .Title }}</a>{{ if isset .Params "twitter" }} <span style="font-size: 1em;"><a href="https://twitter.com/{{ .Param "twitter" }}"><i class="fab fa-twitter"></i> @{{ .Param "twitter" }}</a></span> {{ end }}{{ if isset .Params "github" }}<a href="https://github.com/{{ .Param "github" }}"><i class="fab fa-github"></i> {{ .Param "github" }}</a>{{ end }}{{ end }}</h2>
+		<h3>
+		{{ with .Site.GetPage $roomfile }}<a href="{{ .Permalink }}">{{ .Param "code" }}</a>{{ end }}
+		-
+		{{ $day := .File.Dir }}
+		{{ $day := substr $day 9 }}
+		{{ $day := strings.TrimSuffix "/" $day }}
+		{{ range $.Site.Data.days }}
+			{{ if eq $day .day }}
+			{{ .name }}
+			{{ end }}
+		{{ end }}
+		-
+		{{ .Param "Start" }} &rarr; {{ .Param "End" }}
+		</h3>
+		<div class="event-info">
+			{{ .Content }}
+		</div>
+		{{ with .Site.GetPage $speakerfile }}
+		<div class="event-speaker">
+			<h2>Speaker Info</h2>
+			{{ if isset .Params "image" }}
+				{{ $image := .Param "image" }}
+				{{ $imageurl := urls.Parse $image }}
+				{{ if eq $imageurl.Scheme "https" }}
+					<img src="{{ $image }}" alt="{{ .Title }}">
+				{{ else }}
+					{{ $imagelocation := (printf "%s/%s" "images/speakers/" $image) }}
+					{{ $imageresource := resources.Get $imagelocation }}
+					{{ $imagefile := $imageresource.Fit "400x400" }}
+					<img src="{{ $imagefile.RelPermalink }}" alt="{{ .Title }}">
+				{{ end }}
+			{{ end }}
+			{{ .Content }}
+		</div>
+		{{ end }}
+		{{ if isset .Params "youtube" }}
+			{{ $youtubeurl := "www.youtube-nocookie.com" }}
+			{{ $youtubeid := .Param "youtube" }}
+			<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+				<iframe src="https://{{ $youtubeurl }}/embed/{{ $youtubeid }}?autoplay=0" allowfullscreen title="{{ .Title }}"></iframe>
+			</div>
+		{{ end }}
+	</div>
+</section>
+
+{{ partial "footer.html" . }}
