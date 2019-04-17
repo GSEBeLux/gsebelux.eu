@@ -2,6 +2,7 @@ GSEBeLux Hugo based website
 ==============================
 
 [![Build Status](https://circleci.com/gh/GSEBeLux/gsebelux.eu.svg?branch=master)](https://circleci.com/gh/GSEBeLux/gsebelux.eu)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cbb70af6-e87c-4afa-bdfb-91970dca6962/deploy-status)](https://app.netlify.com/sites/gsebelux/deploys)
 
 
 # GSEBeLux
