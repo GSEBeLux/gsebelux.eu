@@ -1,6 +1,6 @@
 ---
 title: "Quantum Computing, not just a dream, but also in practice"
-speaker:
+speaker: hansvanmingrootericmichiels
 date: 2019-04-15
 eventtype: talk
 room: C
