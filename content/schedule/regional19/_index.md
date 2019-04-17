@@ -1,5 +1,5 @@
 ---
-title: "Regional Conference 2019"
+title: "Regional Conference 2019 - Draft Schedule"
 schedulename: GSEBeLux Regional Conf 2019
 date: 2019-04-15
 type: overview
