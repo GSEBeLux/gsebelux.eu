@@ -5,15 +5,33 @@
 <section id="events">
 	<div>
 		<h1>{{ .Title }}</h1>
+		<div class="content">
 		{{ if .Content }}
-		{{ .Content }}
+			{{ .Content }}
 		{{ end }}
-		<ul>
-		{{ range .Data.Pages }}
-			{{ $eventdate := .Param "Eventdate" }}
-			<li><a href="{{ .Permalink }}">{{ .Title }}</a> - {{ dateFormat "Monday, January 2, 2006" $eventdate }}</li>
-		{{ end }}
-		</ul>
+		</div>
+		<div class="list">
+			<h2>Upcoming Events :</h2>
+			<ul>
+			{{ range .Data.Pages }}
+				{{ $eventdatestring := .Param "Eventdate" }}
+				{{ $eventdate := time $eventdatestring }}
+				{{ if $eventdate.After now }}
+				<a href="{{ .Permalink }}"><li class="upcoming">{{ .Title }} on {{ dateFormat "Monday, January 2, 2006" $eventdate }}</li></a>
+				{{ end }}
+			{{ end }}
+			</ul>
+			<h2>Previous Events :</h2>
+			<ul>
+			{{ range .Data.Pages }}
+				{{ $eventdatestring := .Param "Eventdate" }}
+				{{ $eventdate := time $eventdatestring }}
+				{{ if $eventdate.Before now }}
+				<li><a href="{{ .Permalink }}">{{ .Title }}</a> on {{ dateFormat "Monday, January 2, 2006" $eventdate }}</li>
+				{{ end }}
+			{{ end }}
+			</ul>
+		</div>
 	</div>
 </section>
 

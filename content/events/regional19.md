@@ -2,7 +2,6 @@
 title: "GSE BeLux Regional Conference 2019 - 'Business AgilITy'"
 date: 2019-04-15
 eventdate: 2019-05-08
-type: events
 draft: false
 ---
 

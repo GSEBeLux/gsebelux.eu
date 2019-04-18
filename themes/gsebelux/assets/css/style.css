@@ -2035,9 +2035,31 @@ a.btn:focus{
 	text-align: center;
 	font-size: 3rem;
 }
+#events h1 {
+	color: #0000dd;
+}
+#events h2 {
+	text-decoration: underline;
+}
 #events ul {
 	list-style: none;
 }
+#events li {
+	padding: 10px 10px 10px 10px;
+}
+#events .upcoming {
+	border: 5px solid #0d8ebd;
+}
+#events .upcoming:hover {
+	background: #0d8ebd;
+	color: #ffffff;
+	border: 5px solid #0d8ebd;
+}
+#events a:hover {
+	text-decoration: none;
+}
+
+
 
 .scheduling {
 	margin-top: 150px;
