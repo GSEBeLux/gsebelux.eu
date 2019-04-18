@@ -32,3 +32,5 @@ This year's conference is free of charge, however registration is required.
 Please register on our [Eventbrite page](https://www.eventbrite.be/e/gse-regional-conference-belux-8052019-tickets-56029586000).  
 _No show = 50 euro penalty_
 
+{{< img src="posts/f030a7f7-91be-4393-91c8-dcf5492c8633.jpg" size="750x750" >}}
+

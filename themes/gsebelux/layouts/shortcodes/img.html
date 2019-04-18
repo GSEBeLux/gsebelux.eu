@@ -1,0 +1,9 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $size := .Get "size" }}
+
+{{ $imagelocation := (printf "%s/%s" "images/" $src) }}
+{{ $imageresource := resources.Get $imagelocation }}
+{{ $imagefile := $imageresource.Fit $size }}
+
+<img src="{{ $imagefile.RelPermalink }}" alt="{{ $alt }}">
