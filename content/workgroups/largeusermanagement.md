@@ -1,5 +1,5 @@
 ---
-title: "Larg Users Management Workgroup"
+title: "Large Users Management Workgroup"
 date: 2019-04-05
 draft: false
 ---

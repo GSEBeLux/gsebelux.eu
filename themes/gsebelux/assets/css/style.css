@@ -2098,12 +2098,12 @@ a.btn:focus{
 .workgroup-listing {
 	border: 5px solid #0d8ebd;
 }
-#workgroup-list ul li:hover {
+#workgroup-list li:hover {
 	background-color: #0d8ebd;
 	color: #ffffff;
 }
-#workgroup-list ul li:hover a {
-	color: #ffffff;
+#workgroup-list a {
+	text-decoration: none;
 }
 #workgroup-section {
 	padding-top: 150px;

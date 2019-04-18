@@ -10,7 +10,7 @@
 		{{ end }}
 		<ul>
 		{{ range .Data.Pages }}
-			<li class="workgroup-listing"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			<a href="{{ .Permalink }}"><li class="workgroup-listing">{{ .Title }}</li></a>
 		{{ end }}
 		</ul>
 	</div>
