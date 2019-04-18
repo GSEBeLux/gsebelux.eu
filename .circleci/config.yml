@@ -32,3 +32,11 @@ workflows:
             branches:
               ignore:
                 - gh-pages
+  nightly:
+    triggers:
+      - schedule:
+          cron: "1 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
