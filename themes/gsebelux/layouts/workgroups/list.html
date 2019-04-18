@@ -2,7 +2,7 @@
 
 {{ partial "navbar.html" . }}
 
-<section id="archive">
+<section id="workgroup-list">
 	<div>
 		<h1>{{ .Title }}</h1>
 		{{ if .Content }}
@@ -10,10 +10,10 @@
 		{{ end }}
 		<ul>
 		{{ range .Data.Pages }}
-			<li><a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date }}</li>
+			<li class="workgroup-listing"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 		{{ end }}
 		</ul>
-|   </div>
+	</div>
 </section>
 
 {{ partial "footer.html" . }}

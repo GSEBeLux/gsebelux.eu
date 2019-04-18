@@ -2,11 +2,22 @@
 
 {{ partial "navbar.html" . }}
 
-<section id="home-section" class="home-section paddingtop-120">
+<section id="workgroup-section">
 	<div class="container">
 		<div class="row">
-			<h1>{{ .Title }}</h1>
-			{{ .Content }}
+			<div id="header">
+				<h1>WORKGROUP : {{ .Title }}</h1>
+				<h2>
+				{{ if .Param "mattermost" }}
+					<a href='https://mattermost.gsebelux.eu/chat/channels/{{ .Param "mattermost" }}' name='{{ .Param "mattermost" }} Chat System'>
+						<i class="fa fa-comments"></i>
+					</a>
+				{{ end }}
+				</h2>
+			</div>
+			<div id="content">
+				{{ .Content }}
+			</div>
 		</div>
 	</div>
 </section>

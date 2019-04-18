@@ -42,6 +42,11 @@ section = [ "HTML", "Calendar" ]
 	weight = -1700
 [[menu.navbar]]
 	parent = "workgroups"
+	name = "Overview"
+	url = "/workgroups/"
+	weight = -3000
+[[menu.navbar]]
+	parent = "workgroups"
 	name = "Architecture & Innovation"
 	url = "/workgroups/architectureinnovation/"
 	weight = -2000

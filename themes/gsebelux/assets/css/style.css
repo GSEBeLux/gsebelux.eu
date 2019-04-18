@@ -601,6 +601,7 @@ hr.bold {
 }
 
 
+
 .home-section.nopadding {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -2053,4 +2054,54 @@ a.btn:focus{
 }
 .scheduling a:hover {
 	text-decoration: none;
+}
+
+#workgroup-list {
+	padding-top: 150px;
+	text-align: center;
+}
+#workgroup-list h1 {
+	text-decoration: underline;
+}
+#workgroup-list ul {
+	list-style: none;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	font-size: 2em;
+}
+#workgroup-list ul li {
+	padding: 40px 40px 40px 40px;
+}
+.workgroup-listing {
+	border: 5px solid #0d8ebd;
+}
+#workgroup-list ul li:hover {
+	background-color: #0d8ebd;
+	color: #ffffff;
+}
+#workgroup-list ul li:hover a {
+	color: #ffffff;
+}
+#workgroup-section {
+	padding-top: 150px;
+	display:block;
+	position:relative;
+	z-index:120;
+	background-color: #fff;
+}
+#workgroup-section #header h1 {
+	float: left;
+	color: #0d8ebd;
+	text-decoration: underline;
+}
+#workgroup-section #header h2 {
+	float: right;
+}
+#workgroup-section #content {
+	clear: both;
+}
+#workgroup-section .fa-comments {
+	font-size: 5em;
+	color: #0d8ebd;
 }
