@@ -2,7 +2,7 @@ version: 2
 jobs:
   production:
     docker:
-      - image: cibuilds/hugo:0.55.1
+      - image: cibuilds/hugo:0.55.3
     steps:
       - checkout
       - run:
@@ -11,7 +11,7 @@ jobs:
 
   build:
     docker:
-      - image: cibuilds/hugo:0.55.1
+      - image: cibuilds/hugo:0.55.3
     working_directory: ~/gsebelux
     steps:
       - checkout
@@ -22,6 +22,12 @@ jobs:
           root: .
           paths:
             - public
+
+  netlify:
+    steps:
+      - run:
+          name: "Netlify build hook"
+          command: curl -X POST -d {} https://api.netlify.com/build_hooks/5cc0ec59b0a91c5b526db0df
 
 workflows:
   version: 2
@@ -42,4 +48,4 @@ workflows:
                 - master
     jobs:
       - build
-  
+      - netlify
