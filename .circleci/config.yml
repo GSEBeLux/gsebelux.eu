@@ -24,6 +24,8 @@ jobs:
             - public
 
   netlify:
+    docker:
+      - image: aprorpiate/curl:latest
     steps:
       - run:
           name: "Netlify build hook"
