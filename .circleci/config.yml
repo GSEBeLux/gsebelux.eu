@@ -25,7 +25,7 @@ jobs:
 
   netlify:
     docker:
-      - image: aprorpiate/curl:latest
+      - image: pstauffer/curl
     steps:
       - run:
           name: "Netlify build hook"
@@ -50,4 +50,6 @@ workflows:
                 - master
     jobs:
       - build
-      - netlify
+      - netlify:
+        requires:
+          - build
