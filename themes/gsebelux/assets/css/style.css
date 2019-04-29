@@ -697,8 +697,9 @@ hr.bold {
 	color: #880000;
 }
 .intro h3 {
-	color: #880088;
 	float: right;
+	color: #880088;
+	font-size: 1em;
 }
 .intro p {
 	clear: both;

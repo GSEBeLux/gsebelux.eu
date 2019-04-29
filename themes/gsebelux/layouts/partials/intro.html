@@ -4,8 +4,8 @@
 			{{ range first 4 (where .Data.Pages "Type" "posts") }}
 				<div class="col-lg-8">
 					<h1>{{ .Title }}</h1>
-					<h3>{{ .Date.Format "2 January 2006" }}</h3>
 					<p>{{ .Content }}<p>
+					<h3>Published on {{ .Date.Format "2 January 2006" }}</h3>
 				</div>
 			{{ end  }}
 		</div>
