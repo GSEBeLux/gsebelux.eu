@@ -4,32 +4,31 @@
 
 <div class="scheduling">
 
-<h1>{{ .Title }}</h1>
+<h1>{{ .Title }} - {{ .Params.Code }} - {{ .Params.Capacity }}</h1>
+<h2>Building {{ .Params.Building }} - {{ .Params.Location }}</h2>
 
-<div class="cd-schedule loading">
+<div class="cd-schedule-single loading">
 	<div class="timeline">
 		<ul>
 		{{ range (index $.Site.Data.timeslots (index (split ($.Page.Permalink | relURL) "/") 2)) }}
-			<li><span>{{ .slot }}</span></li>
+			{{ if .slot }}
+				<li><span>{{ .slot }}</span></li>
+			{{ end }}
 		{{ end }}
 		</ul>
 	</div>
 	<div class="events">
 		<ul>
-		{{ range .Data.Pages.GroupByParam "Room" }}
-			{{ $room := .Key }}
-			{{ $roomfile := printf "%s/%s" "room" $room }}
+		{{ $roomcode := .File.BaseFileName }}
 			<li class="events-group">
-				<div class="top-info"><span>{{ .Key }}</span></div>
-				<ul>
-				{{ range .Pages.ByParam "Start" }}
-					{{ $speaker := .Param "speaker" }}
-					{{ $speakerfile := printf "%s/%s" "speakers" $speaker }}
-					<li class="single-event" data-start="{{ .Params.Start }}" data-end="{{ .Params.End }}" data-content="{{ .Permalink }}" data-speaker="{{ $speakerfile | relURL }}" data-event="{{ .Params.Eventtype }}" data-speaker-twitter="{{ with .Site.GetPage $speakerfile }}{{ if isset .Params "twitter" }}{{ .Param "twitter" }}{{ end }}{{ end }}" >
-						<a href="#0"><em class="event-name">{{ .Title }}</em><em class="event-speaker">{{ with .Site.GetPage $speakerfile }}{{ .Title }}{{ end }}</em></a>
-					</li>
-				{{ end }}
-				</ul>
+			<ul>
+			{{ range where $.Site.Pages "Params.room" $roomcode }}
+				{{ $speaker := .Param "speaker" }}
+				{{ $speakerfile := printf "%s/%s" "speakers" $speaker }}
+				<li class="single-event" data-start="{{ .Params.Start }}" data-end="{{ .Params.End }}" data-content="{{ .Permalink }}" data-speaker="{{ $speakerfile | relURL }}" data-event="{{ .Params.Eventtype }}" data-speaker-twitter="{{ with .Site.GetPage $speakerfile }}{{ if isset .Params "twitter" }}{{ .Param "twitter" }}{{ end }}{{ end }}" >
+					<a href="#0"><em class="event-name">{{ .Title }}</em><em class="event-speaker">{{ with .Site.GetPage $speakerfile }}{{ .Title }}{{ end }}</em></a>
+				</li>
+			</ul>
 			</li>
 		{{ end }}
 		</ul>
@@ -48,7 +47,7 @@
 					<span class="event-speaker-twitter"><a class="event-speaker-twitter-url"><i class="fab fa-twitter"></i><span class="event-speaker-twitter-handle"></span></a></span>
 					<br>
 				{{ end }}
-				<span class="event-link"><a class="event-link-url"><i class="fas fa-external-link-alt" style="color:#fff;"></i> More information ...</a></span>
+				<span class="event-link"><a class="event-link-url"><i class="fas fa-external-link-alt" style="color:#fff;"></i></a></span>
 			</div>
 			<div class="header-bg"></div>
 		</header>
@@ -71,7 +70,7 @@
 {{ $modirnizrjs := $modirnizrjavascript | resources.Minify }}
 <script src="{{ $modirnizrjs.RelPermalink }}"></script>
 <script src="{{ "js/jquery-3.0.0.min.js" | relURL }}"></script>
-{{ $mainjavascript := resources.Get "js/main.js" }}
+{{ $mainjavascript := resources.Get "js/main-single.js" }}
 {{ $mainjs :=  $mainjavascript | resources.Minify }}
 <script src="{{ $mainjs.RelPermalink }}"></script>
 

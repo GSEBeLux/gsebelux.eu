@@ -78,7 +78,6 @@
 .cd-schedule .events {
 	position: relative;
 	z-index: 1;
-	text-align: center;
 }
 .cd-schedule .events .events-group {
 	margin-bottom: 30px;
@@ -149,11 +148,11 @@
 
 @media only screen and (min-width: 800px) {
   .cd-schedule .events {
-    float: left;
+    float: center;
     width: 100%;
   }
   .cd-schedule .events .events-group {
-    width: 30%;
+    width: 33.33%;
     float: left;
     border: 1px solid #EAEAEA;
     /* reset style */
@@ -244,24 +243,23 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 .cd-schedule .event-name {
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 }
 @media only screen and (min-width: 800px) {
 	.cd-schedule .event-name {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 }
 .cd-schedule .event-speaker {
-	font-size: 1.50rem;
+	font-size: 1.25rem;
 }
 @media only screen and (min-width: 800px) {
 	.cd-schedule .event-speaker {
-		font-size: 1.50rem;
+		font-size: 1.25rem;
 	}
 }
 .cd-schedule .event-date {
-	font-size: 1.25rem;
-	opacity: .7;
+	font-size: 1rem;
 	line-height: 1;
 	margin-bottom: .2em;
 }
@@ -310,7 +308,7 @@
 	background: #0f880f;
 }
 .cd-schedule .single-event[data-event="break"],
-.cd-schedule [data-event="hackathon"] .header-bg {
+.cd-schedule [data-event="break"] .header-bg {
 	background: #000000;
 }
 .cd-schedule .single-event[data-event="break"]:hover {
@@ -502,7 +500,7 @@
     height: 80px;
   }
   .cd-schedule .event-modal .event-speaker-twitter a {
-     font-size: 0.75em;
+     font-size: 1.25em;
      color: #ffffff;
   }
   .cd-schedule .event-modal .event-link a {

@@ -3,9 +3,13 @@
 {{ partial "navbar.html" . }}
 
 {{ $speaker := .Param "speaker" }}
-{{ $speakerfile := printf "%s/%s" "speaker" $speaker }}
+{{ $speakerfile := printf "%s/%s" "speakers" $speaker }}
 {{ $room := .Param "Room" }}
-{{ $roomfile := printf "%s/%s" "room" $room }}
+{{ $roomfile := printf "%s/%s" "rooms" $room }}
+{{ $event := .File.Dir }}
+{{ $event := substr $event 9 }}
+{{ $event := strings.TrimSuffix "/" $event }}
+{{ $eventdatefile := printf "%s/%s" "events" $event }}
 
 <section id="talk">
 	<div id="talk">
@@ -14,13 +18,9 @@
 		<h3>
 		{{ with .Site.GetPage $roomfile }}<a href="{{ .Permalink }}">{{ .Param "code" }}</a>{{ end }}
 		-
-		{{ $day := .File.Dir }}
-		{{ $day := substr $day 9 }}
-		{{ $day := strings.TrimSuffix "/" $day }}
-		{{ range $.Site.Data.days }}
-			{{ if eq $day .day }}
-			{{ .name }}
-			{{ end }}
+		{{ with .Site.GetPage $eventdatefile }}
+			{{ $eventdate := .Param "eventdate" }}
+			{{ dateFormat "Monday, January 2, 2006" $eventdate }}
 		{{ end }}
 		-
 		{{ .Param "Start" }} &rarr; {{ .Param "End" }}

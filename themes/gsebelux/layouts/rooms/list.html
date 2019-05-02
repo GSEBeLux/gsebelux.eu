@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+
+{{ partial "navbar.html" . }}
+
+<section id="rooms">
+	<div id="rooms">
+	<h1>Rooms</h1>
+	<ul>
+	{{ range sort (.Pages.GroupByParam "code") }}
+		<li>{{ .Key }} {{ range .Pages }}{{ if .Params.capacity }}({{ .Params.capacity }}){{ end }}{{ end }}
+		<ul>
+		{{ range .Pages.ByWeight }}
+			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+		{{ end }}
+		</ul>
+		</li>
+	{{ end }}
+	</ul>
+	</div>
+</section>
+
+{{ partial "footer.html" . }}

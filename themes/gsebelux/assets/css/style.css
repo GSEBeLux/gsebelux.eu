@@ -1906,12 +1906,43 @@ a.btn:focus{
 	outline:0;
 }
 
+#talk {
+	margin-top: 200px;
+	margin-left: 75px;
+	margin-right: 75px;
+	font-size: 24px;
+}
+#talk h1 {
+	font-size: 48px;
+	color: #0d8ebd;
+	text-decoration: underline;
+}
+#talk h2 {
+	color: #008800;
+}
+#talk h2 a {
+	color: #008800;
+}
+#talk h3 {
+	color: #ff0000;
+}
+#talk h3 a {
+	color: #ff0000;
+}
+#speakers {
+	margin-top: 200px;
+	margin-left: 75px;
+	margin-right: 75px;
+	font-size: 24px;
+}
+#speaker {
+	margin-top: 200px;
+	margin-left: 75px;
+	margin-right: 75px;
+	font-size: 24px;
+}
 
 
-/* Theme Styler :: End */
-
-
-/* Media queries */
 
 @media (min-width: 768px) and (max-width: 979px) {
 	.navbar-brand {
@@ -2064,6 +2095,7 @@ a.btn:focus{
 
 .scheduling {
 	margin-top: 150px;
+	margin-bottom: 1500px;
 }
 .scheduling h1 {
 	text-decoration: underline;

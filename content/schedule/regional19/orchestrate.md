@@ -7,5 +7,5 @@ room: B
 start: 14:45
 end: 15:30
 type: schedule
-draft: true
+draft: false
 ---

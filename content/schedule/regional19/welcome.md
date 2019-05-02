@@ -1,6 +1,6 @@
 ---
 title: "Welcome and registration"
-speaker:
+speaker: carlowerbrouck
 date: 2019-04-15
 eventtype: break
 room: A

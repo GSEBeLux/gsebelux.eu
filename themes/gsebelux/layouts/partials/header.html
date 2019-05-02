@@ -25,7 +25,7 @@
 	{{ $colorsheetcss := resources.Get "css/color.css" }}
 	{{ $colorcss := $colorsheetcss | resources.Minify }}
 	<link href="{{ $colorcss.RelPermalink }}" rel="stylesheet" type="text/css" media="screen">
-	<link href="{{ "/css/font-awesome.min.css" | relURL }}" rel="stylesheet" type="text/css" />
+	<link href="{{ "/css/fontawesome.min.css" | relURL }}" rel="stylesheet" type="text/css" />
 	<link href="{{ "/css/bootstrap.min.css" | relURL }}" rel="stylesheet" type="text/css">
 	{{ $schedulestylecss := resources.Get "css/schedule.css" }}
 	{{ $schedulecss := $schedulestylecss | resources.Minify }}

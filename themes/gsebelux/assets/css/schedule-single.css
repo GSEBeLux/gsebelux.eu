@@ -6,9 +6,8 @@
 	content: 'mobile';
 	display: none;
 }
-.cd-schedule-single p {
-	margin: 0;
-	padding: 0;
+.cd-schedule-single em {
+	font-style: normal;
 }
 @media only screen and (min-width: 800px) {
 	.cd-schedule-single {
@@ -39,11 +38,11 @@
 		left: 0;
 		height: 100%;
 		width: 100%;
-		padding-top: 50px;
+		padding-top: 55px;
 	}
 	.cd-schedule-single .timeline li {
 		position: relative;
-		height: 50px;
+		height: 55px;
 	}
 	.cd-schedule-single .timeline li::after {
 		content: '';
@@ -149,11 +148,11 @@
 
 @media only screen and (min-width: 800px) {
   .cd-schedule-single .events {
-    float: left;
+    float: center;
     width: 100%;
   }
   .cd-schedule-single .events .events-group {
-    width: 30%;
+    width: 33.33%;
     float: left;
     border: 1px solid #EAEAEA;
     /* reset style */
@@ -165,7 +164,7 @@
   .cd-schedule-single .events .top-info {
     /* vertically center its content */
     display: table;
-    height: 50px;
+    height: 55px;
     border-bottom: 1px solid #EAEAEA;
     /* reset style */
     padding: 0;
@@ -244,24 +243,23 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 .cd-schedule-single .event-name {
-	font-size: 0.25rem;
+	font-size: 1.5rem;
 }
 @media only screen and (min-width: 800px) {
 	.cd-schedule-single .event-name {
-		font-size: 0.75rem;
+		font-size: 1.5rem;
 	}
 }
 .cd-schedule-single .event-speaker {
-	font-size: 0.75rem;
+	font-size: 1.25rem;
 }
 @media only screen and (min-width: 800px) {
 	.cd-schedule-single .event-speaker {
-		font-size: 0.7rem;
+		font-size: 1.25rem;
 	}
 }
 .cd-schedule-single .event-date {
-	font-size: 0.75rem;
-	opacity: .7;
+	font-size: 1rem;
 	line-height: 1;
 	margin-bottom: .2em;
 }
@@ -310,7 +308,7 @@
 	background: #0f880f;
 }
 .cd-schedule-single .single-event[data-event="break"],
-.cd-schedule-single [data-event="hackathon"] .header-bg {
+.cd-schedule-single [data-event="break"] .header-bg {
 	background: #000000;
 }
 .cd-schedule-single .single-event[data-event="break"]:hover {
@@ -502,7 +500,7 @@
     height: 80px;
   }
   .cd-schedule-single .event-modal .event-speaker-twitter a {
-     font-size: 0.75em;
+     font-size: 1.25em;
      color: #ffffff;
   }
   .cd-schedule-single .event-modal .event-link a {
