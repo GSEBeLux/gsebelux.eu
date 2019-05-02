@@ -504,11 +504,18 @@
      color: #ffffff;
   }
   .cd-schedule-single .event-modal .event-link a {
-     color #ffffff;
+     color: #ffffff;
   }
   .cd-schedule-single .event-modal .event-link a:hover {
-     color #888888;
+     color: #ffffff;
   }
+  .cd-schedule-single .event-modal .event-link-url a {
+	 color #ffffff;
+  }
+  .cd-schedule-single .event-modal .event-link-url a:hover {
+	 color #888888;
+  }
+
 
   .cd-schedule-single .event-modal .header-bg, .cd-schedule-single .event-modal .body-bg {
     /* Force Hardware acceleration */
