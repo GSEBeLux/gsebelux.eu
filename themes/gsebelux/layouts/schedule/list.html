@@ -18,9 +18,9 @@
 		<ul>
 		{{ range .Data.Pages.GroupByParam "Room" }}
 			{{ $room := .Key }}
-			{{ $roomfile := printf "%s/%s" "room" $room }}
+			{{ $roomfile := printf "%s/%s" "rooms" $room }}
 			<li class="events-group">
-				<div class="top-info"><span>{{ .Key }}</span></div>
+				<div class="top-info"><span>{{ with $.Site.GetPage $roomfile }}{{ .Title }}{{ end }}</span></div>
 				<ul>
 				{{ range .Pages.ByParam "Start" }}
 					{{ $speaker := .Param "speaker" }}
