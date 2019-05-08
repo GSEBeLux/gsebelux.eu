@@ -1,6 +1,6 @@
 ---
 title: "Datanews 'IT project of the year' - VDAB"
-speaker:
+speaker: guidovanhumbeeck
 date: 2019-04-15
 eventtype: keynote
 room: A
