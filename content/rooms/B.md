@@ -1,5 +1,5 @@
 ---
-title: "Room B"
+title: "Room 16"
 code: B
 building: Main
 location: "ground floor"

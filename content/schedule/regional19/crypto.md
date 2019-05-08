@@ -3,7 +3,7 @@ title: "Enterprise Key Management & Post-Quantum Cryptography"
 speaker: christianepeters
 date: 2019-04-15
 eventtype: talk
-room: A
+room: B
 start: 11:45
 end: 12:30
 type: schedule
