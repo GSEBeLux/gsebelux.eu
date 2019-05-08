@@ -4,8 +4,8 @@ speaker: stefanvandenborre
 date: 2019-04-15
 eventtype: talk
 room: A
-start: 13:45
-end: 14:30
+start: 11:45
+end: 12:30
 type: schedule
 draft: false
 ---

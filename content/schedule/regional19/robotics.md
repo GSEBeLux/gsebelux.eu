@@ -4,8 +4,8 @@ speaker: onurpamuk
 date: 2019-04-15
 eventtype: talk
 room: A
-start: 11:45
-end: 12:30
+start: 13:45
+end: 14:30
 type: schedule
 draft: false
 ---

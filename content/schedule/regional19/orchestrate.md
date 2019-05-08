@@ -4,8 +4,8 @@ speaker: robbertlambrechts
 date: 2019-04-17
 eventtype: talk
 room: C
-start: 14:45
-end: 15:30
+start: 13:45
+end: 14:30
 type: schedule
 draft: false
 ---
