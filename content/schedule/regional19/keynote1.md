@@ -1,6 +1,6 @@
 ---
 title: "KUL Solar Race Team"
-speaker: agoriasolarteam
+speaker: willemjanclaes
 date: 2019-04-15
 eventtype: keynote
 room: A
