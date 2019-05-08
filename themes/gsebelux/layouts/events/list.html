@@ -16,7 +16,7 @@
 			{{ range .Data.Pages }}
 				{{ $eventdatestring := .Param "Eventdate" }}
 				{{ $eventdate := time $eventdatestring }}
-				{{ if $eventdate.After now }}
+				{{ if $eventdate.After (now.AddDate 0 0 -1) }}
 				<a href="{{ .Permalink }}"><li class="upcoming">{{ .Title }} on {{ dateFormat "Monday, January 2, 2006" $eventdate }}</li></a>
 				{{ end }}
 			{{ end }}
@@ -26,7 +26,7 @@
 			{{ range .Data.Pages }}
 				{{ $eventdatestring := .Param "Eventdate" }}
 				{{ $eventdate := time $eventdatestring }}
-				{{ if $eventdate.Before now }}
+				{{ if $eventdate.Before (now.AddDate 0 0 -1) }}
 				<li><a href="{{ .Permalink }}">{{ .Title }}</a> on {{ dateFormat "Monday, January 2, 2006" $eventdate }}</li>
 				{{ end }}
 			{{ end }}
