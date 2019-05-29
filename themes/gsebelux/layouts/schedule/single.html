@@ -28,6 +28,17 @@
 		<div class="event-info">
 			{{ .Content }}
 		</div>
+		{{ if isset .Params "slides" }}
+		<div class="slides">
+			<object data="{{ .Param "slides" }}" type="application/pdf">
+				<embed src="{{ .Param "slides" }}" type="application/pdf">
+				<p>This browser does not support PDFs. Please download the PDF to view it.</p>
+				</embed>
+			</object>
+			<br>
+			<a href="{{ .Param "slides" }}"><i class="fa fa-download"></i> Download</a>
+		</div>
+		{{ end }}
 		{{ with .Site.GetPage $speakerfile }}
 		<div class="event-speaker">
 			<h2>Speaker Info</h2>
