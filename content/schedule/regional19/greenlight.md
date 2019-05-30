@@ -6,6 +6,7 @@ eventtype: talk
 room: B
 start: 10:45
 end: 11:30
+slides: regionalconf19/20190508.pdf
 type: schedule
 draft: false
 ---

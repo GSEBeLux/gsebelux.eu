@@ -6,6 +6,7 @@ eventtype: talk
 room: C
 start: 14:45
 end: 15:30
+slides: regionalconf19/Quantum Computing - GSE Regional Conference - 8-May-2019.pdf
 type: schedule
 draft: false
 ---

@@ -6,6 +6,7 @@ eventtype: talk
 room: A
 start: 10:45
 end: 11:30
+slides: regionalconf19/Robovision - AI winter is not coming - GSE.pdf
 type: schedule
 draft: false
 ---

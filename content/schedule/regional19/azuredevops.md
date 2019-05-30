@@ -6,6 +6,7 @@ eventtype: talk
 room: A
 start: 14:45
 end: 15:30
+slides: https://assets.gsebelux.eu/regionalconf19/ContinuousIntegrationAndDeploymentWithAzureDevops.pdf
 type: schedule
 draft: false
 ---

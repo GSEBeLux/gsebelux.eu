@@ -6,6 +6,7 @@ eventtype: talk
 room: A
 start: 13:45
 end: 14:30
+slides: regionalconf19/RPA - Roborana - 8052019 - GSE Conference.pdf
 type: schedule
 draft: false
 ---

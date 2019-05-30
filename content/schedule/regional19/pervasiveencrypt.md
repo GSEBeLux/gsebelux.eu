@@ -6,6 +6,7 @@ eventtype: talk
 room: B
 start: 13:45
 end: 14:30
+slides: regionalconf19/GSE regional pervasive encryption.pdf
 type: schedule
 draft: false
 ---

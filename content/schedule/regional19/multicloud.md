@@ -6,6 +6,7 @@ eventtype: talk
 room: B
 start: 14:45
 end: 15:30
+slides: https://assets.gsebelux.eu/regionalconf19/IBM_Hybrid_Cloud_App_Modernization.pdf
 type: schedule
 draft: false
 ---

@@ -6,6 +6,7 @@ eventtype: talk
 room: C
 start: 11:45
 end: 12:30
+slides: regionalconf19/NatConf Be - DevOps PoV v0.3 FINAL.pdf
 type: schedule
 draft: false
 ---
