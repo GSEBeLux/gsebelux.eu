@@ -25,7 +25,18 @@
 				{{ range .Pages.ByParam "Start" }}
 					{{ $speaker := .Param "speaker" }}
 					{{ $speakerfile := printf "%s/%s" "speakers" $speaker }}
-					<li class="single-event" data-start="{{ .Params.Start }}" data-end="{{ .Params.End }}" data-content="{{ .Permalink }}" data-speaker="{{ $speakerfile | relURL }}" data-event="{{ .Params.Eventtype }}" data-speaker-twitter="{{ with .Site.GetPage $speakerfile }}{{ if isset .Params "twitter" }}{{ .Param "twitter" }}{{ end }}{{ end }}" >
+					{{ $slidesurl := "" }}
+					{{ if isset .Params "slides" }}
+						{{ $slides := .Param "slides" }}
+
+						{{ $slidesprefix := substr $slides 0 5 }}
+						{{ if eq $slidesprefix "https" }}
+							{{ $slidesurl = $slides }}
+						{{ else }}
+							{{ $slidesurl = printf "%s/%s" "https://assets.gsebelux.eu" $slides }}
+						{{ end }}
+					{{ end }}
+					<li class="single-event" data-start="{{ .Params.Start }}" data-end="{{ .Params.End }}" data-content="{{ .Permalink }}" data-speaker="{{ $speakerfile | relURL }}" data-event="{{ .Params.Eventtype }}" data-speaker-twitter="{{ with .Site.GetPage $speakerfile }}{{ if isset .Params "twitter" }}{{ .Param "twitter" }}{{ end }}{{ end }}" data-slides="{{ $slidesurl }}" >
 						<a href="#0"><em class="event-name">{{ .Title }}</em><em class="event-speaker">{{ with .Site.GetPage $speakerfile }}{{ .Title }}{{ end }}</em></a>
 					</li>
 				{{ end }}
@@ -49,6 +60,9 @@
 					<br>
 				{{ end }}
 				<span class="event-link"><a class="event-link-url">More information<i class="fas fa-external-link-alt" style="color:#fff;"></i></a></span>
+				<br>
+				<br>
+				<span class="event-slides"><a class="event-slides-url"><i class="fa fa-download" style="color:#fff;"></i> Download Slides <i class="fas fa-external-link-alt" style="color:#fff;"></i></a></span>
 			</div>
 			<div class="header-bg"></div>
 		</header>

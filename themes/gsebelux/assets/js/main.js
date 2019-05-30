@@ -118,6 +118,7 @@ jQuery(document).ready(function($){
 		this.modalHeader.find('.event-speaker-twitter-handle').text('@'+event.parent().attr('data-speaker-twitter'))
 		this.modalHeader.find('.event-speaker-twitter-url').attr('href', 'https://twitter.com/'+event.parent().attr('data-speaker-twitter'))
 		this.modalHeader.find('.event-link-url').attr('href', event.parent().attr('data-content'));
+		this.modalHeader.find('.event-slides-url').attr('href', event.parent().attr('data-slides'))
 
 		this.modal.attr('data-event', event.parent().attr('data-event'));
 

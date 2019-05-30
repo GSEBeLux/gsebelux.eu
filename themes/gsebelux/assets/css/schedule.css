@@ -515,6 +515,18 @@
   .cd-schedule .event-modal .event-link-url a a:hover {
      color: #ffffff;
   }
+  .cd-schedule .event-modal .event-slides a {
+     color: #ffffff;
+  }
+  .cd-schedule .event-modal .event-slides a:hover {
+     color: #ffffff;
+  }
+  .cd-schedule .event-modal .event-slides-url a {
+     color: #ffffff;
+  }
+  .cd-schedule .event-modal .event-slides-url a a:hover {
+     color: #ffffff;
+  }
 
 
   .cd-schedule .event-modal .header-bg, .cd-schedule .event-modal .body-bg {

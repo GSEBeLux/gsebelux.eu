@@ -1929,6 +1929,14 @@ a.btn:focus{
 #talk h3 a {
 	color: #ff0000;
 }
+#talk .slides object {
+	width: 800px;
+	height: 600px;
+}
+#talk .slides a {
+	color: #000000;
+}
+
 #speakers {
 	margin-top: 200px;
 	margin-left: 75px;
