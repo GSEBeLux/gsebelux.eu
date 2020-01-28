@@ -300,6 +300,13 @@
 .cd-schedule .single-event[data-event="workshop"]:hover {
 	background: #880000;
 }
+.cd-schedule .single-event[data-event="panel"],
+.cd-schedule [data-event="panel"] .header-bg {
+	background: #550000;
+}
+.cd-schedule .single-event[data-event="panel"]:hover {
+	background: #880000;
+}
 .cd-schedule .single-event[data-event="hackathon"],
 .cd-schedule [data-event="hackathon"] .header-bg {
 	background: #0f550f;
