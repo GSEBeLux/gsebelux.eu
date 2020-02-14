@@ -1,7 +1,7 @@
 <section id="intro" class="intro paddingtop-120">
 	<div class="container">
 		<div class="row">
-			{{ range first 4 (where .Data.Pages "Type" "posts") }}
+			{{ range first 8 (where $.Site.RegularPages "Type" "posts") }}
 				<div class="col-lg-8">
 					<h1>{{ .Title }}</h1>
 					<p>{{ .Content }}<p>
