@@ -44,7 +44,6 @@ Presentations are online available here :
 
 - [https://assets.gsebelux.eu/zos20191219/Dell EMC GSE Cyber Recovery December 2019 .pdf](https://assets.gsebelux.eu/zos20191219/Dell%20EMC%20GSE%20Cyber%20Recovery%20December%202019%20.pdf)
 - [https://assets.gsebelux.eu/zos20191219/GSE 18-12-19 Whats new zos24.pdf](https://assets.gsebelux.eu/zos20191219/GSE%2018-12-19%20Whats%20new%20zos24.pdf)
-- [https://assets.gsebelux.eu/zos20191219/GSE attendance D18122019 - email_1977_20191220_092456.pdf](https://assets.gsebelux.eu/zos20191219/GSE%20attendance%20D18122019%20-%20email_1977_20191220_092456.pdf)
 - [https://assets.gsebelux.eu/zos20191219/GSE_BE_2019 DevOps.pdf](https://assets.gsebelux.eu/zos20191219/GSE_BE_2019%20DevOps.pdf)
 - [https://assets.gsebelux.eu/zos20191219/GSE DM - Whats new from Dell Technologies - PowerMax and DLm updates Dec 2019.pdf](https://assets.gsebelux.eu/zos20191219/GSE%20DM%20-%20Whats%20new%20from%20Dell%20Technologies%20-%20PowerMax%20and%20DLm%20updates%20Dec%202019.pdf)
 - [https://assets.gsebelux.eu/zos20191219/PhoenixSoftware_GSE_Benelux_20191218.pdf](https://assets.gsebelux.eu/zos20191219/PhoenixSoftware_GSE_Benelux_20191218.pdf)
