@@ -4,13 +4,13 @@ repository:
   # See https://developer.github.com/v3/repos/#edit for all available settings.
 
   # The name of the repository. Changing this will rename the repository
-  name: cfgmgmtcamp.eu
+  name: gsebelux.eu
 
   # A short description of the repository that will show up on GitHub
   description: The repo for website for cfgmgmtcamp.eu
 
   # A URL with more information about the repository
-  homepage: https://github.com/cfgmgmtcamp/cfgmgmtcamp.eu/wiki
+  homepage: https://github.com/GSEBeLux/gsebelux.eu/wiki
 
   # A comma-separated list of topics to set on the repository
   topics: golang, go, configuration-management, config-management, devops, etcd, distributed-systems, graph-theory, choreography
