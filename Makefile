@@ -4,22 +4,25 @@ HUGO=hugo
 
 .PHONY: build serve draft clean travis netlify
 
-all: build
+default all: build
 
 build:
 	$(HUGO) --minify
+	@find public/ -name '*.html' ! -name '*.gz' -type f -exec sh -c "gzip -c -9 < {} > {}.gz" \;
+	@find public/ -name '*.css' ! -name '*.gz' -type f -exec sh -c "gzip -c -9 < {} > {}.gz" \;
+	@find public/ -name '*.js' ! -name '*.gz' -type f -exec sh -c "gzip -c -9 < {} > {}.gz" \;
 
 travis:
 	$(MAKE) HUGO=./hugo build
 
 netlify:
-	$(HUGO) --minify --baseURL="$DEPLOY_PRIME_URL"
+	$(HUGO) --minify --quiet --baseURL="$DEPLOY_PRIME_URL"
 
 draft:
 	$(HUGO) --minify --buildDrafts --buildFuture --buildExpired
 
 serve:
-	$(HUGO) server --disableFastRender
+	$(HUGO) server --disableFastRender --watch
 
 clean:
 	@rm -rf public/
