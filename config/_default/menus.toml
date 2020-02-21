@@ -9,6 +9,11 @@
 	url = "/events/"
 	weight = -1900
 [[navbar]]
+	name = "Discuss"
+	identifier = "dicuss"
+	url = "https://discourse.gsebelux.eu/"
+	weight = -1850
+[[navbar]]
 	name = "Chat"
 	identifier = "chat"
 	url = "https://mattermost.gsebelux.eu/"
