@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+{{ partial "navbar.html" . }}
+
+<section id="intro" class="intro paddingtop-120">
+	<div class="container">
+		<div class="row">
+			{{ $paginator := .Paginate (where $.Site.RegularPages "Type" "posts") }}
+			{{ range $paginator.Pages }}
+			<div class="col-lg-8">
+				<h1>{{ .Title }}</h1>
+				<p>{{ .Content }}<p>
+				<h3>Published on {{ .Date.Format "2 January 2006" }}</h3>
+			</div>
+			{{ end  }}
+		</div>
+	{{ template "_internal/pagination.html" . }}
+	</div>
+</section>
+
+{{ partial "footer.html" . }}
