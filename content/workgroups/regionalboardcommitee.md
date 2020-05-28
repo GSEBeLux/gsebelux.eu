@@ -5,14 +5,16 @@ draft: false
 ---
 
 
-- Mr. Carlo Werbrouck  
+- Mr. Danny Cuyt  
   Regional Manager  
-  P&V Verzekeringen c.v.b.a.  
-  carlo.werbrouck@gmail.com  
+  vICTory-be SRL  
+  Cuyt.Danny@gmail.com  
+
 - Mr. Guy De Winne  
   Technical Coordinator / Financial  
   I.R.I.S. ICT NV-SA  
   guy.de.winne@iriscorporate.com  
+
 - Mr. Dirk De Schutter  
   Technical Coordinator  
   I.R.I.S. ICT NV-SA  
