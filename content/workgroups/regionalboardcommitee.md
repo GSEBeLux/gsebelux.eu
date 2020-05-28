@@ -17,6 +17,6 @@ draft: false
 
 - Mr. Dirk De Schutter  
   Technical Coordinator  
-  I.R.I.S. ICT NV-SA  
+  Core-Origins  
   dirk.de.schutter@telenet.be  
 
