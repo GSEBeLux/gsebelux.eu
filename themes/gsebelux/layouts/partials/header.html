@@ -33,9 +33,8 @@
 	{{ $schedulesinglestylecss := resources.Get "css/schedule-single.css" }}
 	{{ $schedulesinglecss := $schedulesinglestylecss | resources.Minify }}
 	<link href="{{ $schedulesinglecss.RelPermalink }}" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" type="text/css" href="https://registration.gsebelux.eu/regionalconference/2019/widget/v1.css">
-    <script type="text/javascript" src="https://registration.gsebelux.eu/widget/v1.en.js" async></script>
+	<link rel="stylesheet" type="text/css" href="https://registration.gsebelux.eu/regionalconference/2019/widget/v1.css">
+	<script type="text/javascript" src="https://registration.gsebelux.eu/widget/v1.en.js" async></script>
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
