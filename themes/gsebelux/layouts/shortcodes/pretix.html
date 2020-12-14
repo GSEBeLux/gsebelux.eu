@@ -1,5 +1,5 @@
 {{ $eventorganizer := .Get "organizer" }}
-{{ $eventcode := .Get "code" }}
+{{ $eventcode := .Get "event" }}
 
 <div class="pretix-widget-compat" event="https://registration.gsebelux.eu/{{ $eventorganizer }}/{{ $eventcode }}/"></div>
 <noscript>
