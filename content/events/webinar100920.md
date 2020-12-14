@@ -5,7 +5,7 @@ eventdate: 2020-10-08
 draft: false
 ---
 
-{{< img src="posts/webinar-save-the-date-081020.jpg" size="500x500" >}}
+{{< img src="posts/webinar-save-the-date-081020b.jpg" size="500x500" >}}
 
 The Webinar will be held online and will run on 8th October from 16:00 untill 17:30 with a Q&A session afterwards.  
 
