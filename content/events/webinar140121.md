@@ -19,4 +19,12 @@ The topic of this webinar will be __Discover and experience the new world of con
 - Bringing it all together: Containerized Microservices on Red Hat OpenShift on LinuxONE
 - DEMO about deploying a Quarkus Microservice on Red Hat OpenShift on LinuxONE (using LinuxONE Community Cloud)
 
+## Registration ##
+
 {{< pretix organizer="gsebelux" event="webinar140121" >}}
+
+## Slides ##
+
+{{< slides title="Part 1 : Kubernetes RHOCP LinuxONE" url="webinarcontainer140121/Containers-Kubernetes-RHOCP-LinuxONE - GSE - 14-Jan-2020.pdf" >}}
+
+{{< slides title="Part 2 : Quarkus Slides" url="webinarcontainer140121/Quarkus-GSE.pdf" >}}
