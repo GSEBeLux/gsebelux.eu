@@ -1,0 +1,25 @@
+{{ $slidesurl := .Get "url" }}
+{{ $title := .Get "title" }}
+
+{{ $slidesprefix := substr $slidesurl 0 5 }}
+{{ $slidessuffix := split $slidesurl "." }}
+{{ $slidestypesize := int (sub (len $slidessuffix) 1) }}
+{{ $slidestype := index $slidessuffix $slidestypesize }}
+{{ if eq $slidesprefix "https" }}
+	{{ $slidesurl = $slidesurl }}
+{{ else }}
+	{{ $slidesurl = printf "%s/%s" "https://assets.gsebelux.eu" $slidesurl }}
+{{ end }}
+
+<div class="slides">
+	<h3>{{ $title }}</h3>
+	{{ if eq $slidestype "pdf" }}
+		<object data="{{ $slidesurl }}" type="application/pdf">
+			<embed src="{{ $slidesurl }}" type="application/pdf">
+				<p>This browser does not support PDFs. Please download the PDF to view it.</p>
+			</embed>
+		</object>
+		<br>
+	{{ end }}
+	<a href="{{ $slidesurl }}"><i class="fa fa-download"></i> Download</a>
+</div>

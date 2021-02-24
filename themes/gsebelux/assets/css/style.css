@@ -2168,3 +2168,7 @@ a.btn:focus{
 	font-size: 5em;
 	color: #0d8ebd;
 }
+.slides object {
+	height: 768px;
+	width: 768px;
+}
