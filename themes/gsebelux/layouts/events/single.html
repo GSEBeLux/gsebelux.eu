@@ -1,14 +1,31 @@
 {{ partial "header.html" . }}
-
 {{ partial "navbar.html" . }}
-
-<section id="home-section" class="home-section paddingtop-120">
-	<div class="container">
-		<div class="row">
-			<h1>{{ .Title }}</h1>
-			{{ .Content }}
+<section id="event" class="event paddingtop-120">
+<div class="container">
+	<div id="event">
+		<div class="row" id="event-header">
+			<h1 id="event">{{ .Title }}</h1>
+			<h2 id="event">{{ .Param "subtitle" }}</h2>
+		</div>
+		<div class="row" id="event-content">
+			{{ if .Param "image" }}
+				<div class="col-lg-6">
+					{{ $imagename := .Param "image.source" }}
+					{{ $imagelocation := (printf "%s/%s" "/images/events/" $imagename) }}
+					{{ $imageresource := resources.Get $imagelocation }}
+					{{ $imagesizeparam := .Param "image.size" }}
+					{{ $imagesize := (printf "%s webp" $imagesizeparam) }}
+					{{ $image := $imageresource.Fit $imagesize }}
+					<img src="{{  $image.RelPermalink }}" alt="{{ .Title }} - {{ .Param "subtitle" }}" title="{{ .Title }} - {{ .Param "subtitle" }}">
+				</div>
+				<div class="col-lg-6">
+			{{ else }}
+				<div class="col-lg-12">
+			{{ end }}
+					{{ .Content }}
+				</div>
 		</div>
 	</div>
+</div>
 </section>
-
 {{ partial "footer.html" . }}
