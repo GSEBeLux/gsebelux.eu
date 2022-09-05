@@ -15,6 +15,8 @@ The Conference will be held in the Elewijt Center in Elewijt (Zemst) on __Tuesda
 This year the theme will be  
 "__THE IMPACT OF (ARTIFICIAL) INTELLIGENCE__".  
 
+{{< pretix organizer="gsebelux" event="2022" >}}
+
 During the day, we will have presentation sessions, and a hackathon,
 you will have the possibility to visit the different booths of our sponsors,
 which will be centralised around the different conference rooms.  
@@ -27,3 +29,5 @@ Parking places will be foreseen and free of charge.
 
 This year's conference is free of charge, however registration is required. (_No show = 50 euro penalty_)  
 Registration will open soon, in the mean time, you can subscribe to our conference mailinglist.  
+
+{{< pretalx event="regional22" >}}
