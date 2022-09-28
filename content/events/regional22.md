@@ -28,6 +28,5 @@ Location Elewijt Center : [http://www.letsmeet.be/](http://www.letsmeet.be/)
 Parking places will be foreseen and free of charge.  
 
 This year's conference is free of charge, however registration is required. (_No show = 50 euro penalty_)  
-Registration will open soon, in the mean time, you can subscribe to our conference mailinglist.  
 
 {{< pretalx event="regional22" >}}
