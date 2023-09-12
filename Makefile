@@ -1,6 +1,6 @@
 #!Makefile
 
-HUGO=hugo
+HUGO=hugo-extended
 
 .PHONY: build serve draft clean travis netlify
 
@@ -16,7 +16,7 @@ travis:
 	$(MAKE) HUGO=./hugo build
 
 netlify:
-	$(HUGO) --minify --quiet --baseURL="$DEPLOY_PRIME_URL"
+	hugo --minify --quiet --baseURL="$DEPLOY_PRIME_URL"
 
 draft:
 	$(HUGO) --minify --buildDrafts --buildFuture --buildExpired
