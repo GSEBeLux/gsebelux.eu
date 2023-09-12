@@ -19,7 +19,11 @@ cicircle:
 	hugo --minify
 
 netlify:
+	hugo --minify
+
+netlifypreview:
 	hugo --minify --quiet --baseURL="$DEPLOY_PRIME_URL"
+
 
 draft:
 	$(HUGO) --minify --buildDrafts --buildFuture --buildExpired
