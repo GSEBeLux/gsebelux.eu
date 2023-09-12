@@ -9,10 +9,10 @@
   publish = "public/"
 
 [context.production.environment]
-   HUGO_VERSION = "0.118.0"
+   HUGO_VERSION = "0.115.4"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.118.0"
+  HUGO_VERSION = "0.115.4"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.118.0"
+HUGO_VERSION = "0.115.4"
