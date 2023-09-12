@@ -11,13 +11,13 @@ jobs:
 
   build:
     docker:
-      - image: cibuilds/hugo:0.79.0
+      - image: cibuilds/hugo:0.118.0
     working_directory: ~/gsebelux
     steps:
       - checkout
       - run:
           name: "Run Hugo"
-          command: make
+          command: make cicircle
       - persist_to_workspace:
           root: .
           paths:

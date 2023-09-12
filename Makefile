@@ -15,6 +15,9 @@ build:
 travis:
 	$(MAKE) HUGO=./hugo build
 
+cicircle:
+	$(HUGO) --minify
+
 netlify:
 	hugo --minify --quiet --baseURL="$DEPLOY_PRIME_URL"
 
