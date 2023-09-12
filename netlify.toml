@@ -1,11 +1,11 @@
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
 [context.production]
- command = "make"
+ command = "make netlify"
  publish = "public/"
 
  [context.deploy-preview]
-  command = "make netlify"
+  command = "make netlifypreview"
   publish = "public/"
 
 [context.production.environment]
