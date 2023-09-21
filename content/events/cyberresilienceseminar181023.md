@@ -21,11 +21,11 @@ The topic of this seminar will be
 
 Agenda :
 
-	* 09:00 -> 10:00 | Coffee and breakfast - Congress Center Pitboxes
+	* 09:00 -> 10:00 | Coffee and breakfast - Congress Center Circuit Zolder
 	* 10:00 -> 10:45 | EUR Regulations for Cyberresilience : What to expect & how to plan for it
 	* 10:45 -> 12:00 | Cyberresilience scenaries for zSystems
 	* 12:00 -> 12:30 | Resilience in endurance motersport
-	* 12:30 -> 13:00 | Walking lunch including refreshments while going to the pitbox
+	* 12:30 -> 13:00 | Walking lunch including refreshments
 	* 13:00 -> 17:00 | Possibility for hotlap onboard 2 racecars (Porsche Caymand S & BMW M1)
 	* 17:00 -> 18:00 | Closing drink in the pitbox and experience sharing
 
