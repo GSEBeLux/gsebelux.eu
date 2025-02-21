@@ -21,39 +21,50 @@ Motstraat 30, 2800 Mechelen.
 
 #### 11.30-12u  
 __Welcome__  
+  
 
 #### 12u-13u  
 __Lunch__  
+  
 
 #### 13u-13.15  
-__Intro__
+__Intro__  
 *By Danny Cuyt, Region Manager GSE Belux and Technical & Relationship Manager at Victory-be / MeTech*
+  
 
 #### 13.15 u-14.15  
-__Approaches to Mainframe (z/OS) Application Modernisation and AI assisted Application modernisation with IBM Watsonx Code Assistant for Z__
+__Approaches to Mainframe (z/OS) Application Modernisation and AI assisted Application modernisation with IBM Watsonx Code Assistant for Z__  
 *By Frank (thewall) van der Wal, IBM ZTO & Sales Leader Watsonx Code Assistant for z*  
+  
 
 #### 14.15u-14.30  
 __Coffee__  
+  
 
 #### 14.30-15.15  
-__IBM Modernisation in Practice, live demo, using the IBM Cloud, covering: IBM Code Assistant for z, GIT, Dependency Based Build, Wazi Deploy__
+__IBM Modernisation in Practice, live demo, using the IBM Cloud, covering: IBM Code Assistant for z, GIT, Dependency Based Build, Wazi Deploy__  
 *Jointly presented by Asist and Ikan Development*  
+  
 
 #### 15.15-15.45  
-__The new IBM Z and LinuxONE systems__
+__The new IBM Z and LinuxONE systems__  
 *By Hans Deketele, IBM LinuxONE Sales Leader for BeLux & Product Owner IBM Z / LinuxONE for IBM Northern, Central and Eastern Europe*  
+  
 
 #### 15.45-16.15  
-__GSE Young Professionals Working Group: Empowering the Next Generation of Young Professionals__
+__GSE Young Professionals Working Group: Empowering the Next Generation of Young Professionals__  
 *By Ramona Pilotto, GSE Young Professionals Working Group Leader*  
+  
 
 #### 16.15u  
-__Closing__
+__Closing__  
 *By Danny Cuyt, Region Manager GSE Belux and Technical & Relationship Manager at Victory-be / MeTech*  
+  
 
 #### 16u30-18u  
 __Networking__  
+  
 
 View this conference as PDF:  
 [Download PDF](/downloads/gse-conference-may-2025.pdf)
+  
