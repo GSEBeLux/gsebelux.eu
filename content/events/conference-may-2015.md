@@ -21,12 +21,12 @@ Motstraat 30, 2800 Mechelen.
 
 #### 11.30-12u  
 __Welcome__  
-  
+
+&nbsp;  
 
 #### 12u-13u  
 __Lunch__  
-  
-
+&nbsp;  
 #### 13u-13.15  
 __Intro__  
 *By Danny Cuyt, Region Manager GSE Belux and Technical & Relationship Manager at Victory-be / MeTech*
