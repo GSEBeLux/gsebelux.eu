@@ -66,5 +66,12 @@ __Networking__
   
 
 View this conference as PDF:  
-[Download PDF](/downloads/gse-conference-may-2025.pdf)
+[Download PDF](/downloads/gse-conference-may-2025.pdf)  
   
+
+### Registration:
+
+[LinkedIn](https://www.linkedin.com/events/7298654453434404866)
+
+or by using EventBrite:
+[EventBrite](https://www.eventbrite.com/e/gse-conference-mainframe-application-modernisation-and-young-professionals-tickets-1256294934969)
