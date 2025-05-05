@@ -10,4 +10,4 @@ This Seminar will take place on the _May 22, 2025_  at: _The Crescent/De Mot, Mo
 
 The topic is __Mainframe Application Modernisation and Young Professionals__.  
 
-More information and the schedule is available on our [event page](/events/conference-may-2015/).  
+More information and the schedule is available on our [event page](/events/conference-may-2025/).  

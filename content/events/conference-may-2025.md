@@ -7,7 +7,10 @@ image:
 eventdate: 2025-05-22
 date: 2025-02-20
 draft: false
+aliases:
+- /events/conference-may-2025
 ---
+
 
 ### When and where
 
