@@ -37,12 +37,13 @@ __Transactional AI on IBM Z__
  
 
 __14.30 - 15.30h__  
-__AI-Driven Observability and Automation__ {class="color"}  
+__AI-Driven Observability and Automation__  
 *Mustapha Gulkara, IBM, Brand Technical Specialist - IBM Z,  Nederland*
 
 *Kristof Stroobants, IBM IT Specialist (and bit of IT Architect & IT Consultant all-rounder), Belgium*
 
-*Marc De Groote, Managing Partner Asist, Belgium*  
+*Marc De Groote, Managing Partner Asist, Belgium* 
+
 &nbsp; 
 
 
@@ -53,12 +54,14 @@ __Coffee break__
 __16 - 17h__  
 __Agentic AI for z/OS Development__  
 *Gary Mazo, Architect IBM Bob for Z. IBM Silicon Valley Laboratory, San Jose CA, In charge of technical direction and content of IBM Enterprise modernization tools*
+
 &nbsp;  
 
 
 __17.15 - 17.30h__  
 __GSE BeLux Workgroups 2.0 – Your Community, Your Input__  
 *René De Vleeschauwer, Managing Partner IKAN Development, Belgium*
+
 &nbsp;  
 
 
