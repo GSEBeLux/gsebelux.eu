@@ -32,18 +32,19 @@ __Welcome and Lunch__
 __13.15 - 14.15h__  
 __Transactional AI on IBM Z__  
 *Khadija Souissi, Principal Solution Architect - AI on IBM Z and LinuxONE, Distinguished Technical Specialist Böblingen, Germany*
+
 &nbsp;  
  
 
 __14.30 - 15.30h__  
-__AI-Driven Observability and Automation__  
+__AI-Driven Observability and Automation__ {class="color"}  
 *Mustapha Gulkara, IBM, Brand Technical Specialist - IBM Z,  Nederland*
 
 *Kristof Stroobants, IBM IT Specialist (and bit of IT Architect & IT Consultant all-rounder), Belgium*
 
 *Marc De Groote, Managing Partner Asist, Belgium*  
 &nbsp; 
-  
+
 
 __15.30 - 16h__  
 __Coffee break__  
