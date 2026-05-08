@@ -19,9 +19,9 @@ Motstraat 30, 2800 Mechelen.
 
 ---
 
-### Agenda (subject to change)
+### Agenda
 
-This conference will bring together insights and real-world use cases on applying AI on IBM Z, combined with opportunities to connect with peers.
+The “Put AI to Work on IBM Z” conference brings together leading experts, practitioners, and innovators to demonstrate how artificial intelligence is no longer theoretical on the mainframe. It is operational, embedded, and delivering measurable value today.
 
 Format: Half-day event (afternoon)
 
@@ -33,6 +33,7 @@ __13.15 - 14.15h__
 __Transactional AI on IBM Z__  
 *Khadija Souissi, Principal Solution Architect - AI on IBM Z and LinuxONE, Distinguished Technical Specialist Böblingen, Germany*
 &nbsp;  
+ 
 
 __14.30 - 15.30h__  
 __AI-Driven Observability and Automation__  
@@ -41,7 +42,8 @@ __AI-Driven Observability and Automation__
 *Kristof Stroobants, IBM IT Specialist (and bit of IT Architect & IT Consultant all-rounder), Belgium*
 
 *Marc De Groote, Managing Partner Asist, Belgium*  
-&nbsp;  
+&nbsp; 
+  
 
 __15.30 - 16h__  
 __Coffee break__  
@@ -52,10 +54,12 @@ __Agentic AI for z/OS Development__
 *Gary Mazo, Architect IBM Bob for Z. IBM Silicon Valley Laboratory, San Jose CA, In charge of technical direction and content of IBM Enterprise modernization tools*
 &nbsp;  
 
+
 __17.15 - 17.30h__  
 __GSE BeLux Workgroups 2.0 – Your Community, Your Input__  
 *René De Vleeschauwer, Managing Partner IKAN Development, Belgium*
 &nbsp;  
+
 
 __17.30 - 19h__  
 __Get together and drink__  
